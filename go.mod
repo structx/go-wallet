@@ -1,4 +1,4 @@
-module github.com/trevatk/wallet
+module github.com/trevatk/go-wallet
 
 go 1.22.0
 
