@@ -19,10 +19,11 @@ var (
 type Wallet struct {
 	p kyber.Scalar
 	P kyber.Point
+	s kyber.Group
 }
 
-// NewWallet return new wallet
-func NewWallet() *Wallet {
+// New return new wallet
+func New() *Wallet {
 
 	suite := edwards25519.NewBlakeSHA256Ed25519()
 	rand := suite.RandomStream()
@@ -33,6 +34,7 @@ func NewWallet() *Wallet {
 	return &Wallet{
 		P: X,
 		p: x,
+		s: suite,
 	}
 }
 
