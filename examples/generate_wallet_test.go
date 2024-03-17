@@ -7,7 +7,7 @@ import (
 )
 
 func Test_GenerateWallet(t *testing.T) {
-	w := wallet.NewWallet()
+	w := wallet.New()
 
 	addr, err := w.Address()
 	if err != nil {
