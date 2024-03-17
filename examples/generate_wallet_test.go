@@ -3,7 +3,7 @@ package examples
 import (
 	"testing"
 
-	"github.com/trevatk/wallet"
+	"github.com/trevatk/go-wallet"
 )
 
 func Test_GenerateWallet(t *testing.T) {
